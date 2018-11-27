@@ -1,0 +1,472 @@
+*{
+	-webkit-box-sizing:border-box; /* Chrome, Safari, Opera */
+	-moz-box-sizing:border-box; /* Firefox */
+	box-sizing:border-box;
+}
+
+/* PT Sans Font Import */
+/* cyrillic-ext */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/JX7MlXqjSJNjQvI4heMMGvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/9kaD4V2pNPMMeUVBHayd7vY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+.container{
+	padding:1%;
+} 
+/*need a clear fix*/
+.container:after,.row:after, .row-padding:after{content:"";display:table;clear:both;} 
+
+/*So all the columns go into the row and not stack*/
+.col,.whole,.half,.halflogo,.third,.thirdlogo,.twothird,.threequarter,.quarter,.quarterlogo,.quartermerch,.socialhalf,.musichalf{float:left; } 
+
+/*the different column widths*/
+.whole{width:100%;}
+.half{width:49.99999%;}
+.halflogo{width:49.99999%;} 
+.quarter{width:24.99999%;} 
+.quarterlogo{width:24.99999%}
+.quartermerch{width:24.99999%;}
+.third{width:33.33333%;}
+.thirdlogo{width:33.33333%;}
+.twothird{width:66.66666%;} 
+.threequarter{width:74.99999%;}
+.socialhalf{width:42.857%}
+.musichalf{width:57.14%}
+.menudiv{
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body, html{
+    height: 100%;
+}
+
+.row-padding,.row-padding>.col{padding:0 8px;} 
+/*so images respond to size of parent div*/
+img{ width: 100%;
+	height:auto;
+}
+
+/* Page Styles */
+body{ 	
+    color: #ffffff;
+    background: white;
+    font-family: "PT Sans";
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    max-width: 1700px;
+    text-decoration-color: #3f3f3f;
+}
+
+
+h1{
+    font-weight: bold;
+    color: #3f3f3f;
+    margin-bottom: .2em;
+    margin-top: .1em;
+    font-size: 35pt;
+    text-align: center;
+}
+h2{
+    font-weight : bold;
+	color: #3f3f3f;
+	margin-bottom : .5em;
+	margin-top : .5em;
+	font-size : 1.75em;
+    line-height : 1.2;
+    text-transform: uppercase;
+    text-align: center;
+} 
+h3{
+    color: #3f3f3f;
+    text-align: center;
+}
+h4{
+    color: #3f3f3f;
+    text-align: center;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+h5{
+    font-weight: normal;
+    color: #3f3f3f;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin-bottom : 1em;  	
+    color: #3f3f3f;
+    font-size: 15pt;
+}
+
+.bg{
+    background-image: url("images/background/3.jpg");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
+/* Anchored Links Styles */
+a{
+    color: #3f3f3f;
+    text-decoration:none; 
+} 
+a:hover{
+    color: #e35370;
+    transition: all 0.3s ease;
+}
+
+/* Footer Styles */
+footer{
+    padding-left: 0.5em; 	
+    padding-right: 0.5em; 
+    padding-bottom: 0.5em;	
+    line-height: 1.4em; 	
+    text-align: right; 	
+    color: #3f3f3f;
+    bottom: 50;	
+    font-size: 0.923em;
+}
+footer a{	 	
+    color: #3f3f3f;
+    font-size: 0.923em;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+/* Menu Bar Styles */
+.menu_bar ul{         
+    text-align: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+} 
+.menu_bar ul li{         
+    display: inline-block;         
+    position: relative;         
+    line-height: 15px;         
+    text-align: center;    
+} 
+.menu_bar ul li a{       
+    display: block;       
+    padding: 6px 15px;       
+    color: #3f3f3f;
+    font-weight: bold;        
+    text-decoration: none;   
+}    
+.menu_bar ul li a:hover{      	
+    color:  #e35370;
+    transition: all 0.3s ease;
+}
+#menu{
+    padding: 0;
+}
+
+/*General Styles */
+.marginsite{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.textAlignRight{ 	
+    text-align:right; 
+}
+.textAlignLeft{
+    text-align: left;
+}
+.textAlignCenter{
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0;
+}
+.imgCenter{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80.666%;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+.center{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display:block;
+}
+
+hr{
+    display: block;
+    border: 0;
+    border-top: 1px solid #e35370;
+    height: 2px;
+}
+/* Roster Styles */
+.roster {
+    text-align: center;
+}
+.roster h3{
+    color: #3f3f3f;
+    margin: 0;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    font-size: 1.5em;
+}
+.roster h4{
+    color: #3f3f3f;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin: 0;
+    text-decoration: none;
+}
+.roster h5{
+    margin: 0;
+    color: #3f3f3f;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    text-decoration: none;
+    font-size: .75em;
+}
+.roster img{
+    margin: 0;
+    padding: 0;
+}
+
+.line{
+    display: none;
+}
+
+
+.mobileline{
+    width:33%;
+}
+
+.merchline{
+    width:75%;
+}
+
+.youtube{
+    width:66%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.youtube-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.youtube-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.subscribe{
+    width: 14%;
+    height: auto;
+}
+
+.newrelease{
+    width:75%;
+}
+
+.slideshow{
+    width:50%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:15px;
+}
+
+a img:hover{
+    opacity: 0.9;
+    transform: scale(1.013);
+    transition: all 0.1s ease;
+}
+
+@keyframes merchcolor {
+    0%   {color:#e35370; }
+    50%  {color:#3f3f3f; }
+    100%  {color:#e35370; }
+
+}
+
+.merchcolor{
+    animation: merchcolor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size:46px;
+    margin-bottom:0px;
+    padding-bottom:0;
+}
+
+.announce_mobile{
+    display: none;
+}
+
+.mobile_social{
+    display: none;
+}
+
+.mobileres{
+    display: none;
+}
+
+
+
+
+/* Mobile Styles */
+@media (max-width:961px){
+    .merchcolor{
+        font-size:38px;
+    }
+}
+@media (max-width:800px){ 	
+    .half{width:100%;} 	
+    .quarter{width:100%;} 	
+    .third{width:100%;} 	
+    .twothird{width:100%;} 	
+    .threequarter{width:100%;}
+    .socialhalf{width:100%}
+    .musichalf{width:100%}
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .imgCenter{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .marginsite{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .line{
+        display: block;
+    }
+    .mobileline{
+        width:66%;
+    }
+    .roster h3{
+        font-size: 1.25em;
+    
+    }
+    .roster h4{
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .merchline{
+        width:100%;
+    }
+    video{
+        width:98%;
+        height:98%;
+    }
+    .youtube{
+        width:98%;
+    }
+    .subscribe{
+        width: 25%;
+    }
+    .slideshow{
+        width: 90%;
+    }
+    .bg{
+        background-image: none;
+    }
+
+    .newrelease{
+        width:100%;
+    }
+    .merchcolor{
+        font-size: 25px;
+    }
+
+    #announce{
+        display: none;
+    }
+    .announce_mobile{
+        display: block;
+    }
+
+    .full_social{
+        display: none;
+    }
+
+    .mobile_social{
+        display: inline-block;
+    }
+
+    .fullres{
+        display: none;
+    }
+    .mobileres{
+        display: inline-block;
+    }
+    .nomobileline{
+        display: none;
+    }
+    /*#72bcd3*/
+    /*
+    .background{
+        background-color: black;
+        margin: auto;
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .background h2{
+        color: white;
+    }
+    .background h3{
+        color: white;
+    }
+    */
+}
